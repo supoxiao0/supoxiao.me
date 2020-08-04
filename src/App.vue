@@ -1,15 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+ <div class="main">
+  <TopNav />
+  <router-view />
+ </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TopNav from "./components/TopNav.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TopNav
   }
 }
 </script>
